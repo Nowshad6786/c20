@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+float ci,amount,principal,rate,time;
+printf("Enter principal amount:");
+scanf("%f",&principal);
+printf("enter rate of interest:");
+scanf("%f",&rate);
+printf("enter time in(years):");
+scanf("%f",&time);
+amount=principal*pow((1+rate/100),time);
+ci=amount-principal;
+printf("compound interest of %f\n is:",ci);
+printf("Total amount=%f",amount);
+    return 0;
+}
